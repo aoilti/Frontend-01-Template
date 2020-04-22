@@ -15,7 +15,6 @@
             const codePoint = chart[i].codePointAt();
             let binaryCode = codePoint.toString(2);
             if (binaryCode.toString().length < 8) {
-                console.log(str.substr(0, 8 - binaryCode.toString().length))
                 binaryCode = str.substr(0, 8 - binaryCode.toString().length) + '' + binaryCode.toString();
             }
 
